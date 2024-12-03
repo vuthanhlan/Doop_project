@@ -2,9 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -31,7 +29,7 @@ public class sign_up {
         sleep(10000);
 
         //Bước 3: Tìm text sdt--> nhập sdt
-        driver.findElement(By.name("phone")).sendKeys("0325789451");
+        driver.findElement(By.name("phone")).sendKeys("0325789488");
         sleep(5000);
 
         //Bước 4: Tìm butotn tích chọn--> tích chọn
@@ -40,7 +38,7 @@ public class sign_up {
         sleep(2000);
 
         //Bước 5: tìm button đăng ký--> click button Đăng Ký
-         driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div[2]/div[2]/div[3]/div/button")).click();
+        driver.findElement(By.xpath("/html/body/div[1]/div/div/div/div/div[2]/div[2]/div[3]/div/button")).click();
         sleep(10000);
 
         driver.findElement(By.tagName("input")).sendKeys("000000");
@@ -53,7 +51,7 @@ public class sign_up {
         sleep(2000);
         driver.findElement(By.name("confirmPassword")).sendKeys("12345678");
         sleep(2000);
-        driver.findElement(By.name("email")).sendKeys("qrrrrq@gmail.com");
+        driver.findElement(By.name("email")).sendKeys("dffff@gmail.com");
         sleep(2000);
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
